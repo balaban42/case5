@@ -4,14 +4,12 @@ Balabanov M.A.
 
 """
 
-
 import urllib.request
 
 with open('input.txt', 'r') as f_in:
     lines = f_in.readlines()
 
 with open('output.txt', 'w') as f_out:
-
     col = '{:<20}{:<7}{:<7}{:<7}{:<7}{:<7}{:<7}\n'.format('Full Name', 'COMP', 'ATT', 'YDS', 'TD', 'INT', 'RATE')
     f_out.write(col)
     for url in lines:
